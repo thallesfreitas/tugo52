@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
@@ -19,16 +18,18 @@ import { ProjectTechStack } from "@/components/pages/projects/details/project-te
 import { ProjectTimeline } from "@/components/pages/projects/details/project-timeline";
 import { ProjectLessons } from "@/components/pages/projects/details/project-lessons";
 import { projectDetailMock } from "@/@mocks/mock-projectDetails";
+import { Locale } from "@/@types";
+
+type Params = Promise<{ id: string; locale: Locale }>;
 
 interface ProjectDetailPageProps {
-  params: {
-    id: string;
-    locale: string;
-  };
+  params: Params;
 }
 
-export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  const { id, locale } = params;
+export default async function ProjectDetailPage({
+  params,
+}: ProjectDetailPageProps) {
+  const { id, locale } = await params;
 
   //This will be used with this integrated to API
   console.log(id);

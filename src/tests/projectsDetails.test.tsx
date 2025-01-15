@@ -135,7 +135,6 @@ describe("ProjectLessons", () => {
     render(<ProjectLessons lessons={lessonsWithoutDesc} />);
 
     expect(screen.getByText("Apenas Título")).toBeInTheDocument();
-    const card = screen.getByRole("article");
   });
 });
 

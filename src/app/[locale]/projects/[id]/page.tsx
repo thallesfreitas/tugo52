@@ -22,14 +22,18 @@ import type { Locale } from "@/@types";
 import { projectDetailMock } from "@/@mocks/mock-projectDetails";
 
 interface ProjectDetailPageProps {
-  params: { id: string };
+  params: {
+    id: string;
+    locale: string;
+  };
 }
 
 export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
   //This will be used with this integrated to API
-  console.log(params);
+  const { id, locale } = params;
 
-  const locale = useLocale() as Locale;
+  console.log(id);
+  // const locale = useLocale() as Locale;
   const project = projectDetailMock[locale];
   return (
     <article className="container py-8">

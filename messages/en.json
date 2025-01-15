@@ -1,0 +1,184 @@
+{
+  "common": {
+    "week": "week",
+    "weeks": "weeks",
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "suggest": "Suggest",
+      "about": "About",
+      "contact": "Contact",
+      "switchLocale": "{locale, select, pt {PT} en {EN} other {Unknown}}"
+    },
+    "cta": {
+      "github": "GitHub",
+      "viewProject": "View project",
+      "send": "Send",
+      "sending": "Sending..."
+    },
+    "footer": {
+      "text": "© 2025 TUGO52. All Rights..."
+    }
+  },
+  "home": {
+    "hero": {
+      "tagline": "Current week:",
+      "title": "52 weeks,",
+      "title2": "52 projects",
+      "subtitle": "A personal challenge to create 52 micro-projects in 52 weeks",
+      "cta": "View projects",
+      "suggest": "Suggest project"
+    },
+    "stats": {
+      "timeLeft": "Time Left",
+      "projectsDone": "Projects Done",
+      "techUsed": "Technologies Used"
+    },
+    "weekProgress": {
+      "title": "Weekly Progress",
+      "subtitle": "Follow the development of projects week by week",
+      "cta": "See all"
+    },
+    "latestProjects": {
+      "title": "Latest Projects",
+      "subtitle": "The latest challenge projects",
+      "cta": "See all",
+      "soon": "Soon",
+      "next": "Next Project"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Explore all TUGO52 challenge projects",
+    "filters": {
+      "byTech": {
+        "technology": "Filter by technology",
+        "searchtech": "Search for technology...",
+        "notfoundtech": "No technology found",
+        "commons": {
+          "selected": "selected",
+          "selected2": "selected"
+        }
+      },
+      "byOrder": {
+        "recent": "Most recent",
+        "oldest": "Oldest",
+        "name": "Name",
+        "complexity": "Complexity",
+        "orderBy": "Order by"
+      }
+    },
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "planned": "Planned"
+    }
+  },
+  "suggest": {
+    "title": "Suggest a Project",
+    "subtitle": "Have an innovative idea that can be built in a week?",
+
+    "form": {
+      "title": "Idea Title",
+      "placeholder_title": "Be creative",
+      "problem": "What problem does it solve?",
+      "placeholder_problem": "Describe a need or difficulty that people/companies face and would pay to solve.",
+      "innovation": "Innovative differential",
+      "placeholder_innovation": "Explain what makes your solution unique compared to existing alternatives in the market",
+      "accept": "By submitting, you agree that your idea may be implemented during the TUGO52 challenge and made available as open source.",
+      "submit": {
+        "text": "Submit Idea"
+      }
+    },
+    "examples": {
+      "title": "Examples of good suggestions:",
+      "title-ex1": "🎯 Avatar Generation API",
+      "text-ex1": "A service that generates unique avatars based on usernames or hashes.",
+      "title-ex2": "🎯 AI Wedding Speech Writer",
+      "text-ex2": "A specialized assistant that creates personalized wedding speeches using AI",
+      "title-ex3": "🎯 AI Legal Template Generator",
+      "text-ex3": "A system that generates and customizes legal documents using AI, focusing on common needs of small businesses and professionals."
+    },
+    "lookingFor": {
+      "title": "What we are looking for:",
+      "text1": "Innovation solutions that solve real problems",
+      "text2": "Global projects",
+      "text3": "MVP's that can be build in one week",
+      "text4": "Ideas with new technlogies"
+    }
+  },
+  "about": {
+    "title": "About TUGO52",
+    "subtitle": "A 52-week journey turning ideas into code",
+    "manifest": {
+      "text": "TUGO52 is a personal challenge turned into a movement: creating 52 projects in 52 weeks. Each project is an opportunity to learn, experiment, and contribute to the developer community.",
+      "text2": "'The best way to learn is by building. The best way to grow is by sharing. This project brings both together.'"
+    },
+    "pillars": {
+      "title": "Project Pillars",
+      "global": "Global Impact",
+      "text_global": "Creating solutions that can be useful for developers anywhere in the world.",
+      "learning": "Continuous Learning",
+      "text_learning": "Exploring new technologies and concepts with each project, expanding technical horizons.",
+      "opensource": "Open Source",
+      "text_opensource": "All code is open source, allowing others to learn, contribute, and be inspired.",
+      "mvp": "MVP in 1 Week",
+      "text_mvp": "Focused on delivering value quickly, with functional MVPs in one week."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "question1": "Why 52 projects?",
+      "answer1": "A full year of focused development, creating a consistent routine of building and learning.",
+      "question2": "How are the projects chosen?",
+      "answer2": "A combination of community suggestions, identified needs, and experimentation with new technologies.",
+      "question3": "Can I contribute?",
+      "answer3": "Absolutely! You can suggest projects, contribute code, or provide feedback on implementations.",
+      "btn-suggest": "Make your suggestion now!"
+    },
+    "cta": {
+      "title": "Get Involved",
+      "text_btn": "Suggest a Project"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk about technology, projects, and innovation",
+    "social": {
+      "media1": {
+        "title": "Twitter",
+        "text": "Daily updates"
+      },
+      "media2": {
+        "title": "GitHub",
+        "text": "Source code"
+      },
+      "media3": {
+        "title": "Linkedin",
+        "text": "Professional connections"
+      },
+      "media4": {
+        "title": "Email",
+        "text": "contact@tugo52.com"
+      }
+    },
+    "form": {
+      "title": "Send a message",
+      "name": "Name",
+      "email": "Email",
+      "placeholder_email": "your@email.com",
+      "subject": "Subject",
+      "subject_placeholder": "Select subject",
+      "message": "Message",
+      "placeholder_message": "Message",
+      "submit": {
+        "text": "Send a message"
+      },
+      "subjects": {
+        "suggestion": "Project Suggestion",
+        "collaboration": "Collaboration",
+        "feedback": "Feedback",
+        "other": "Other"
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "common": {
+    "week": "semana",
+    "weeks": "semanas",
+    "nav": {
+      "home": "Início",
+      "projects": "Projetos",
+      "suggest": "Sugerir",
+      "about": "Sobre",
+      "contact": "Contato",
+      "switchLocale": "{locale, select, en {EN} pt {PT} other {Unknown}}"
+    },
+    "cta": {
+      "github": "GitHub",
+      "viewProject": "Ver Projeto",
+      "send": "Enviar",
+      "sending": "Enviando..."
+    },
+    "footer": {
+      "text": "© 2025 TUGO52. Todos os direitos reservados."
+    }
+  },
+  "home": {
+    "hero": {
+      "tagline": "Semana atual:",
+      "title": "52 semanas,",
+      "title2": "52 projetos",
+      "subtitle": "Um desafio pessoal de criar 52 microprojetos em 52 semanas",
+      "cta": "Ver projetos",
+      "suggest": "Sugerir projeto"
+    },
+    "stats": {
+      "timeLeft": "Tempo Restante",
+      "projectsDone": "Projetos Concluídos",
+      "techUsed": "Tecnologias Usadas"
+    },
+    "weekProgress": {
+      "title": "Progresso Semanal",
+      "subtitle": "Acompanhe o desenvolvimento dos projetos semana a semana",
+      "cta": "Ver todos"
+    },
+    "latestProjects": {
+      "title": "Últimos projetos",
+      "subtitle": "Os projetos mais recentes do desafio",
+      "cta": "Ver todos",
+      "soon": "Em breve",
+      "next": "Próximo Project"
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Explore todos os projetos do desafio TUGO52",
+
+    "filters": {
+      "byTech": {
+        "technology": "Filtrar por tecnologia",
+        "searchtech": "Buscar por tecnologia...",
+        "notfoundtech": "Nenhuma tecnologia encontrada",
+        "commons": {
+          "selected": "selecionado",
+          "selected2": "selecionados"
+        }
+      },
+      "byOrder": {
+        "orderBy": "Ordenar por",
+        "recent": "Mais recentes",
+        "oldest": "Mais antigos",
+        "name": "Nome",
+        "complexity": "Complexidade"
+      }
+    },
+    "status": {
+      "completed": "Concluído",
+      "inProgress": "Em Progresso",
+      "planned": "Planejado"
+    }
+  },
+  "suggest": {
+    "title": "Sugira um Projeto",
+    "subtitle": "Tem uma ideia inovadora que pode ser construída em uma semana?",
+
+    "form": {
+      "title": "Título da Ideia",
+      "placeholder_title": "Seja criativo",
+      "problem": "Qual problema isso resolve?",
+      "placeholder_problem": "Descreva uma necessidade ou dificuldade que pessoas/empresas enfrentam e pagariam para resolver",
+      "innovation": "Diferencial inovador",
+      "placeholder_innovation": "Explique o que torna sua solução única quando comparada às alternativas existentes no mercado",
+      "accept": "Ao enviar, você concorda que sua ideia pode ser implementada durante o desafio TUGO52 e disponibilizada como código aberto.",
+      "submit": {
+        "text": "Enviar ideia"
+      }
+    },
+    "examples": {
+      "title": "Exemplos de boas sugestões:",
+      "title-ex1": "🎯 API de Geração de Avatares",
+      "text-ex1": "Um serviço que gera avatares únicos baseados em nomes de usuário ou hashes.",
+      "title-ex2": "🎯 Escritor de Discursos de Casamento com IA",
+      "text-ex2": "Um assistente especializado em criar discursos personalizados para casamentos usando IA",
+      "title-ex3": "🎯 Gerador de Modelos Jurídicos com IA",
+      "text-ex3": "Um sistema que gera e personaliza documentos legais usando IA, focando em necessidades comuns de pequenos negócios e profissionais."
+    },
+    "lookingFor": {
+      "title": "O que estamos buscando:",
+      "text1": "Soluções inovadoras que resolvam problemas reais",
+      "text2": "Projetos com potencial de impacto global",
+      "text3": "MVPs que possam ser construídos em uma semana",
+      "text4": "Ideias que explorem tecnologias modernas e emergentes"
+    }
+  },
+  "about": {
+    "title": "Sobre o TUGO52",
+    "subtitle": "Uma jornada de 52 semanas transformando ideias em código",
+    "manifest": {
+      "text": "O TUGO52 é um desafio pessoal transformado em movimento: criar 52 projetos em 52 semanas. Cada projeto é uma oportunidade de aprender, experimentar e contribuir para a comunidade de desenvolvedores.",
+      "text2": "'A melhor maneira de aprender é construindo. A melhor maneira de crescer é compartilhando. Este projeto une os dois.'"
+    },
+    "pillars": {
+      "title": "Pilares do Projeto",
+      "global": "Impacto Global",
+      "text_global": "Criação de soluções que possam ser úteis para desenvolvedores em qualquer lugar do mundo.",
+      "learning": "Aprendizado Contínuo",
+      "text_learning": "Exploração de novas tecnologias e conceitos a cada projeto, expandindo horizontes técnicos.",
+      "opensource": "Código Aberto",
+      "text_opensource": "Todo código é open source, permitindo que outros aprendam, contribuam e se inspirem.",
+      "mvp": "MVP em 1 Semana",
+      "text_mvp": "Foco em entregar valor rapidamente, com MVPs funcionais em uma semana."
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "question1": "Por que 52 projetos?",
+      "answer1": "Um ano completo de desenvolvimento focado, criando uma rotina consistente de construção e aprendizado.",
+      "question2": "Como os projetos são escolhidos?",
+      "answer2": "Combinação de sugestões da comunidade, necessidades identificadas e experimentação com novas tecnologias.",
+      "question3": "Posso contribuir?",
+      "answer3": "Absolutamente! Você pode sugerir projetos, contribuir com código ou dar feedback nas implementações.",
+      "btn-suggest": "Faça sua sugestão agora!"
+    },
+    "cta": {
+      "title": "Faça Parte",
+      "text_btn": "Sugerir Projeto"
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar sobre tecnologia, projetos e inovação",
+    "social": {
+      "media1": {
+        "title": "Twitter",
+        "text": "Atualizações diárias"
+      },
+      "media2": {
+        "title": "GitHub",
+        "text": "Código fonte"
+      },
+      "media3": {
+        "title": "Linkedin",
+        "text": "Conexões profissionais"
+      },
+      "media4": {
+        "title": "Email",
+        "text": "contact@tugo52.com"
+      }
+    },
+    "form": {
+      "title": "Envie uma Mensagem",
+      "name": "Nome",
+      "email": "Email",
+      "placeholder_email": "seu@email.com",
+      "subject": "Assunto",
+      "subject_placeholder": "Selecione o assunto",
+      "message": "Mensagem",
+      "placeholder_message": "Sua messagem",
+      "submit": {
+        "text": "Enviar Mensagem"
+      },
+      "subjects": {
+        "suggestion": "Sugestão de Projeto",
+        "collaboration": "Colaboração",
+        "feedback": "Feedback",
+        "other": "Outro"
+      }
+    }
+  }
+}

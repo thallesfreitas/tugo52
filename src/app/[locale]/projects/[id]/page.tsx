@@ -17,8 +17,6 @@ import {
 import { ProjectTechStack } from "@/components/pages/projects/details/project-tech-stack";
 import { ProjectTimeline } from "@/components/pages/projects/details/project-timeline";
 import { ProjectLessons } from "@/components/pages/projects/details/project-lessons";
-import { useLocale } from "next-intl";
-import type { Locale } from "@/@types";
 import { projectDetailMock } from "@/@mocks/mock-projectDetails";
 
 interface ProjectDetailPageProps {
@@ -29,9 +27,9 @@ interface ProjectDetailPageProps {
 }
 
 export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  //This will be used with this integrated to API
   const { id, locale } = params;
 
+  //This will be used with this integrated to API
   console.log(id);
   // const locale = useLocale() as Locale;
   const project = projectDetailMock[locale];

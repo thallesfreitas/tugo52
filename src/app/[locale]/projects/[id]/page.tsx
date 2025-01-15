@@ -21,11 +21,11 @@ import { useLocale } from "next-intl";
 import type { Locale } from "@/@types";
 import { projectDetailMock } from "@/@mocks/mock-projectDetails";
 
-export default function ProjectDetailPage({
-  params,
-}: {
+interface ProjectDetailPageProps {
   params: { id: string };
-}) {
+}
+
+export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
   //This will be used with this integrated to API
   console.log(params);
 

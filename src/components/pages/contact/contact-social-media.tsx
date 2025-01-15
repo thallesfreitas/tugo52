@@ -1,8 +1,4 @@
-import Form from "next/form";
-import { Card } from "@/components/ui/card";
 import { Twitter, Github, Linkedin, Mail } from "lucide-react";
-import { ContactForm } from "@/components/pages/contact/contact-form";
-import ContactHeader from "@/components/pages/contact/contact-header";
 import { Title } from "@/components/ui/Title";
 import { Text } from "@/components/ui/text";
 import { useTranslations } from "next-intl";

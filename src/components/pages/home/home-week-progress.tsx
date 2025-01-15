@@ -20,7 +20,7 @@ interface ProjectHighlightProps {
 export function ProjectHighlight({
   title,
   description,
-  week,1
+  week,
   tech,
   link,
 }: ProjectHighlightProps) {

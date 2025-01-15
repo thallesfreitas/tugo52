@@ -32,7 +32,7 @@ export default function ContactSocialMedia() {
         </div>
       </ContactCardSocial>
 
-      <ContactCardSocial href="mailto:contato@tugo52.com">
+      <ContactCardSocial href="mailto:letsgo@tugo52.com">
         <Mail className="h-5 w-5 mr-3 text-primary" />
         <div>
           <Title>{t("media4.title")}</Title>

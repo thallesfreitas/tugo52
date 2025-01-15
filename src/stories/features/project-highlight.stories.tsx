@@ -1,5 +1,5 @@
+import { WeekProgress } from "@/components/pages/home/home-project-highlight";
 import type { Meta, StoryObj } from "@storybook/react";
-import { WeekProgress } from "@/components/pages/home/home-week-progress";
 
 const meta = {
   title: "Features/WeekProgress",

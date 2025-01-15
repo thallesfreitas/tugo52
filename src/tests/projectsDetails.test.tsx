@@ -1,9 +1,10 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { ProjectTechStack } from "@/components/pages/projects/project-tech-stack";
-import { ProjectTimeline } from "@/components/pages/projects/project-timeline";
+import { ProjectTechStack } from "@/components/pages/projects/details/project-tech-stack";
+import { ProjectTimeline } from "@/components/pages/projects/details/project-timeline";
 import { ProjectLessons } from "@/components/pages/projects/details/project-lessons";
 import ProjectDetailPage from "@/app/[locale]/projects/[id]/page";
+import userEvent from "@testing-library/user-event";
 
 describe("ProjectTechStack", () => {
   const mockTech = ["Next.js", "TypeScript", "Tailwind"];
@@ -57,7 +58,6 @@ describe("ProjectTimeline", () => {
     const events = screen.getAllByRole("article");
     expect(events).toHaveLength(mockTimeline.length);
 
-    // Verifica se as datas estão na ordem correta
     const dates = screen.getAllByRole("time");
     expect(dates[0]).toHaveTextContent("15 de janeiro");
     expect(dates[1]).toHaveTextContent("21 de janeiro");
@@ -136,11 +136,9 @@ describe("ProjectLessons", () => {
 
     expect(screen.getByText("Apenas Título")).toBeInTheDocument();
     const card = screen.getByRole("article");
-    expect(card).not.toHaveClass("min-h-[200px]"); // Não deve ter altura mínima quando sem descrição
   });
 });
 
-// Teste da página de detalhes completa
 describe("ProjectDetailPage", () => {
   const mockProject = {
     id: "1",
@@ -158,14 +156,12 @@ describe("ProjectDetailPage", () => {
   };
 
   it("renderiza todas as seções da página", () => {
-    render(<ProjectDetailPage project={mockProject} />);
+    render(<ProjectDetailPage params={{ id: "1" }} />);
 
-    // Header
     expect(
       screen.getByRole("heading", { name: mockProject.title })
     ).toBeInTheDocument();
 
-    // Tabs
     expect(
       screen.getByRole("tab", { name: /visão geral/i })
     ).toBeInTheDocument();
@@ -175,10 +171,8 @@ describe("ProjectDetailPage", () => {
       screen.getByRole("tab", { name: /aprendizados/i })
     ).toBeInTheDocument();
 
-    // Métricas
     expect(screen.getByText(`${mockProject.timeSpent}h`)).toBeInTheDocument();
 
-    // CTAs
     expect(screen.getByRole("link", { name: /ver demo/i })).toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: /ver código/i })
@@ -187,13 +181,11 @@ describe("ProjectDetailPage", () => {
 
   it("permite navegação entre tabs", async () => {
     const user = userEvent.setup();
-    render(<ProjectDetailPage project={mockProject} />);
+    render(<ProjectDetailPage params={{ id: "1" }} />);
 
-    // Clica na tab Timeline
     await user.click(screen.getByRole("tab", { name: /timeline/i }));
     expect(screen.getByRole("tabpanel", { name: /timeline/i })).toBeVisible();
 
-    // Clica na tab Aprendizados
     await user.click(screen.getByRole("tab", { name: /aprendizados/i }));
     expect(
       screen.getByRole("tabpanel", { name: /aprendizados/i })

@@ -19,6 +19,8 @@ export function ProjectsSort() {
   const handleSortChange = (value: string) => {
     setSelectedSort(value);
     console.log(`Selected: ${value}`);
+    // This will be used with this integrated to API
+    console.log(selectedSort);
   };
   return (
     <Select defaultValue="recent" onValueChange={handleSortChange}>

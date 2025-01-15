@@ -11,6 +11,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
 import "../globals.css";
+import { Locale } from "@/@types";
 
 export default async function LocaleLayoutServer({
   params,
@@ -21,7 +22,7 @@ export default async function LocaleLayoutServer({
 }) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
   const messages = await getMessages();

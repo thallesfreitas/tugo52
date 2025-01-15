@@ -26,6 +26,9 @@ export default function ProjectDetailPage({
 }: {
   params: { id: string };
 }) {
+  //This will be used with this integrated to API
+  console.log(params);
+
   const locale = useLocale() as Locale;
   const project = projectDetailMock[locale];
   return (

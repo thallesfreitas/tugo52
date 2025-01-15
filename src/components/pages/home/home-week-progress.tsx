@@ -30,7 +30,12 @@ export function ProjectHighlight({
   return card;
 }
 
-interface CardHighlightProps extends Omit<ProjectHighlightProps, "link"> {}
+interface CardHighlightProps extends Omit<ProjectHighlightProps, "link"> {
+  title?: string;
+  description?: string;
+  week?: number;
+  tech?: string[];
+}
 
 const CardHighlight = ({
   title,

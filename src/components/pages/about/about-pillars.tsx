@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Card } from "@/components/ui/card";
-import { Globe, Rocket, Brain, Code, GitFork } from "lucide-react";
+import { Globe, Rocket, Brain, Code } from "lucide-react";
 
 export default function Pillars() {
   const t = useTranslations("about.pillars");

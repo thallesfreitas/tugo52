@@ -1,23 +1,19 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { WeekProgress } from "@/components/pages/home/home-week-progress";
-import { ProjectHighlight } from "@/components/pages/home/project-highlight";
+import { WeekProgress } from "@/components/pages/home/home-project-highlight";
+import { ProjectHighlight } from "@/components/pages/home/home-week-progress";
 
 describe("WeekProgress", () => {
   it("mostra progresso correto para a semana atual", () => {
     render(<WeekProgress currentWeek={1} />);
 
-    // Verifica se a barra de progresso está presente
     expect(screen.getByRole("progressbar")).toBeInTheDocument();
 
-    // Verifica se mostra semana correta
     expect(screen.getByText(/semana 1/i)).toBeInTheDocument();
 
-    // Verifica se há 52 indicadores de semana
     const indicators = screen.getAllByTestId("week-indicator");
     expect(indicators).toHaveLength(52);
 
-    // Verifica se a primeira semana está ativa
     expect(indicators[0]).toHaveClass("bg-primary");
   });
 
@@ -26,7 +22,6 @@ describe("WeekProgress", () => {
 
     const indicators = screen.getAllByTestId("week-indicator");
 
-    // Verifica se todas as semanas estão marcadas como completas
     indicators.forEach((indicator) => {
       expect(indicator).toHaveClass("bg-primary");
     });
@@ -49,7 +44,6 @@ describe("ProjectHighlight", () => {
     expect(screen.getByText(mockProject.description)).toBeInTheDocument();
     expect(screen.getByText(/semana 1/i)).toBeInTheDocument();
 
-    // Verifica se todas as tecnologias são mostradas
     mockProject.tech.forEach((tech) => {
       expect(screen.getByText(tech)).toBeInTheDocument();
     });

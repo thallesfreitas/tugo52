@@ -1,40 +1,10 @@
-// import createMiddleware from "next-intl/middleware";
-// import { routing } from "./i18n/routing";
-
-// export default createMiddleware(routing);
-
-// export const config = {
-//   // Match only internationalized pathnames
-//   matcher: ["/", "/(pt|en)/:path*"],
-// };
-
 import type { NextRequest } from "next/server";
-// import { withAuth } from "next-auth/middleware";
 import createMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
 
-const publicPages = [
-  "/",
-  "/login",
-  // (/secret requires auth)
-];
+const publicPages = ["/", "/login"];
 
 const intlMiddleware = createMiddleware(routing);
-
-// const authMiddleware = withAuth(
-//   // Note that this callback is only invoked if
-//   // the `authorized` callback has returned `true`
-//   // and not for pages listed in `pages`.
-//   (req) => intlMiddleware(req),
-//   {
-//     callbacks: {
-//       authorized: ({ token }) => token != null,
-//     },
-//     pages: {
-//       signIn: "/login",
-//     },
-//   }
-// );
 
 export default function middleware(req: NextRequest) {
   const publicPathnameRegex = RegExp(
@@ -43,10 +13,11 @@ export default function middleware(req: NextRequest) {
       .join("|")})/?$`,
     "i"
   );
-  console.log("req.nextUrl.pathname");
-  console.log(req.nextUrl.pathname);
+
   const isPublicPage = publicPathnameRegex.test(req.nextUrl.pathname);
 
+  //This will be used with this integrated to API
+  console.log(isPublicPage);
   // if (isPublicPage) {
   return intlMiddleware(req);
   // } else {

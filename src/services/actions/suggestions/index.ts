@@ -17,10 +17,8 @@ export async function createSuggestion(formData: FormData) {
       references: formData.get("references"),
     };
 
-    // Valida os dados do formulário
     const validated = suggestionSchema.parse(raw);
 
-    // Em produção, enviaria para a API
     const response = await fetch("https://api.tugo52.com/suggestions", {
       method: "POST",
       headers: {
@@ -34,11 +32,10 @@ export async function createSuggestion(formData: FormData) {
     }
 
     revalidatePath("/suggestions");
-
     return { success: true };
-  } catch (error: any) {
+  } catch (error) {
     return {
-      error: error.message || "Algo deu errado. Tente novamente.",
+      error: (error as Error).message || "Algo deu errado. Tente novamente.",
     };
   }
 }

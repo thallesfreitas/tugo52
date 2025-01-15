@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { ProjectCard } from "./projects-card";
 import { LocalizedProject } from "../../../@types/projects";
 import { projectsMocks } from "../../../@mocks/mock-projects";

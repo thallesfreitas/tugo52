@@ -1,4 +1,4 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/routing";
 
 import {
@@ -10,12 +10,9 @@ import {
 } from "@/components/ui/select";
 
 export default function LocaleSwitcher() {
-  const t = useTranslations("common.nav");
   const locale = useLocale();
   const pathname = usePathname();
-
   const router = useRouter();
-
   const handleLanguageChange = (newLocale: string) => {
     router.push(pathname, { locale: newLocale });
   };
